@@ -1,0 +1,14 @@
+# 数据集配置（相对路径版）
+#
+# 原文件里的 path 写的是本机的绝对路径 D:/yolo_course/xiaosai_arena_202610/arena_box_ds，
+# 换台机器就跑不了，所以这里改成相对路径。
+#
+# 用之前先跑 build_box_dataset.py 生成数据集目录，
+# 然后确认 ../datasets/arena_box_ds 下有 images/{train,val,test} 和 labels/{train,val,test}。
+# 图片和标注不进仓库（体积大）。
+
+path: ../datasets/arena_box_ds
+train: images/train
+val: images/val
+test: images/test
+names: ['box']
